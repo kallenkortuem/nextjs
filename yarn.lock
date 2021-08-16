@@ -119,10 +119,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
-"@kallenkortuem/bookish-invention@1.0.1":
-  version "1.0.1"
-  resolved "https://npm.pkg.github.com/download/@kallenkortuem/bookish-invention/1.0.1/63f115b1f37445de77d316d45b5f504e1fc054d7a2e48cb4585f86852ecc14e5#15c90dd5469db488d208d462e686cbe81135c424"
-  integrity sha512-SrrtLSTuFmjnVTpsjJ16ce3iqDN6OA64P9cGUjw+xaJXA5akiS4PJJ5/fQn10iyD3udhdv8qurE6WqC8LSuSyQ==
+"@kallenkortuem/bookish-invention@1.0.2":
+  version "1.0.2"
+  resolved "https://npm.pkg.github.com/download/@kallenkortuem/bookish-invention/1.0.2/abe9fcd3f853fbd23a8a19f94cae37a41d79fb285e0f99cfb4c34cce22ecad49#6e01b0fe47ea26a5f1074d5426d1d38b31af49aa"
+  integrity sha512-F/0CBukbApyUN+VvkSWGjZs57o9ODw91t6t8LU21gx/+sVQmhX9uW1gjxPg+A0pBC+8TUrNXPQzvkVHQGpO4Gg==
   dependencies:
     axios "^0.21.1"
     swr "^0.5.6"
