@@ -23,6 +23,7 @@ import {
 } from "@material-ui/data-grid";
 import { formatDistanceToNowStrict } from "date-fns";
 import { GetStaticPaths, GetStaticProps } from "next";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import React from "react";
 import Copyright from "../../components/Copyright";
@@ -85,10 +86,14 @@ const MasterySummonerNames = ({ data }: MasterySummonerNamesProps) => {
   }
 
   return (
+    <>
+    <Head>
+      <title>Champion Mastery</title>
+    </Head>
     <Container maxWidth="xl">
       <Box my={4}>
         <Typography variant="h4" component="h1" gutterBottom>
-          Summoners
+          Champion Mastery
         </Typography>
         <Grid container >
           {data.map(({ summoner, masteries }) => (
@@ -99,7 +104,7 @@ const MasterySummonerNames = ({ data }: MasterySummonerNamesProps) => {
                   subheader={`Total mastery ${masteries
                     .reduce((prev, cur) => prev + cur.championPoints, 0)
                     .toLocaleString()}`}
-                />
+                    />
                 <CardContent>
                   <div style={{ height: "500px", width: "100%" }}>
                     <DataGrid
@@ -107,7 +112,7 @@ const MasterySummonerNames = ({ data }: MasterySummonerNamesProps) => {
                       columns={columns}
                       autoPageSize
                       disableSelectionOnClick
-                    />
+                      />
                   </div>
                 </CardContent>
               </Card>
@@ -120,6 +125,7 @@ const MasterySummonerNames = ({ data }: MasterySummonerNamesProps) => {
         <Copyright />
       </Box>
     </Container>
+          </>
   );
 };
 
