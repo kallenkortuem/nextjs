@@ -1,11 +1,16 @@
+import {  } from "@kallenkortuem/bookish-invention";
 import { Box, Container, Link, Typography } from "@material-ui/core";
-import { GetServerSideProps, GetStaticPaths, GetStaticProps } from "next";
+import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";
 import React from "react";
 import Copyright from "../../components/Copyright";
 import ProTip from "../../components/ProTip";
 
-const MasterySummonerNames = () => {
+interface MasterySummonerNamesProps {
+  
+}
+
+const MasterySummonerNames = ({}: MasterySummonerNamesProps) => {
   const router = useRouter();
   const { summonerNames } = router.query;
   if (!Array.isArray(summonerNames)) {
@@ -30,10 +35,12 @@ const MasterySummonerNames = () => {
 
 export default MasterySummonerNames;
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps<MasterySummonerNamesProps> = async (context) => {
   // ...
   return {
-    props: {},
+    props: {
+
+    },
   };
 };
 
